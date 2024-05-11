@@ -19,11 +19,11 @@ const int motorFR1 = 19;       // Front-right motor positive
 const int motorFR2 = 18;       // Front-right motor negative
 
 
-CytronMD motor_frontleft(PWM_PWM, motorFL1,motorFL2);   // PWM 1A = Pin 10, PWM 1B = Pin 11.
-CytronMD motor_frontright(PWM_PWM,motorFR1,motorFR2);   // PWM 2A = Pin 8, PWM 2B = Pin 9.
+CytronMD motor_frontleft(PWM_DIR, motorFL1,motorFL2);   //  PWM 1 = motorFL1, DIR 1 = motorFL2.
+CytronMD motor_frontright(PWM_DIR,motorFR1,motorFR2);   //  PWM 1 = motorFR1, DIR 1 = motorFR2 .
 
-CytronMD motor_backleft(PWM_PWM,motorBL1,motorBL2);   // PWM 1A = Pin 10, PWM 1B = Pin 11.
-CytronMD motor_backright(PWM_PWM,motorBR1,motorBR2);   // PWM 2A = Pin 8, PWM 2B = Pin 9.
+CytronMD motor_backleft(PWM_DIR,motorBL1,motorBL2);   // PWM 1 = motorBL1, DIR 1 = motorBL2.
+CytronMD motor_backright(PWM_DIR,motorBR1,motorBR2);   // PWM 1 = motorBR1, DIR 1 = motorBR2.
 
 
 double w_fl;

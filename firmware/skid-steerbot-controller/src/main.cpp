@@ -50,11 +50,13 @@ void FourMecanumKinematic()
   pwm_rl = map(w_rl, lower_speed_limit, upper_speed_limit, lower_pwm_limit, upper_pwm_limit);
   pwm_rr = map(w_rr, lower_speed_limit, upper_speed_limit, lower_pwm_limit, upper_pwm_limit);
 
-  // Serial.print("front left W: ");
-  // Serial.println(w_fl);
+  // Serial.print("front right pwm: ");
+  // Serial.println(pwm_fr);
 
   // Serial.print("front left pwm: ");
   // Serial.println(pwm_fl);
+
+
  motor_frontleft.setSpeed( pwm_fl);   // PWM 1A = Pin 10, PWM 1B = Pin 11.
  motor_frontright.setSpeed(pwm_fr);   // PWM 2A = Pin 8, PWM 2B = Pin 9.
 
