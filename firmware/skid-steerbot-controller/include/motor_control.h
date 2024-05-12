@@ -6,8 +6,8 @@ const int motorFL1 = 2;       // Front-left motor positive
 const int motorFL2 = 15;        // Front-left motor negative
 
 
-const int motorBL1 = 14;       // Back-left motor positive
-const int motorBL2 = 27;        // Back-left motor negative
+const int motorBL1 = 27;       // Back-left motor positive
+const int motorBL2 = 14;       // Back-left motor negative
 
 
 
